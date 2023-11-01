@@ -33,7 +33,7 @@ export const Courses = () => {
                   Learn More
                 </a>
                 {/* Use Link to navigate to another page and pass data as state */}
-                <Link to={`/coursedetails`} name={item.name}>View Details</Link>
+                {/* <Link to={`/coursedetails`} name={item.name}>View Details</Link> */}
               </div>
             </div>
           </div>
