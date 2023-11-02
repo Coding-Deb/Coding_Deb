@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home';
 import { Courses } from './Pages/Courses';
 import { About } from './Pages/About';
-import { CoursedDetails } from './Pages/CoursedDetails';
+import { CourseDetails } from './Pages/CourseDetails';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route exact path='/Home' element={<Home/>}/>
         <Route exact path='/About' element={<About/>}/>
         <Route exact path='/Courses' element={<Courses/>}/>
-        <Route exact path='/Coursesdetails' element={<CoursedDetails/>}/>
+        <Route exact path='/Coursesdetails' element={<CourseDetails/>}/>
       </Routes>
     </Router>
   );
