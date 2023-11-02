@@ -73,7 +73,7 @@ export const About = () => {
           </Row>
           <Row>
             <Col className="text-center">
-              &copy; {new Date().getFullYear()} Your Company Name
+              &copy; {new Date().getFullYear()} Coding Deb
             </Col>
           </Row>
         </footer>
