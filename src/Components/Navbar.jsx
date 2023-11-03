@@ -12,7 +12,7 @@ export const Navbar = () => {
             alt="Logo"
           />
         </Link>
-        <h3 className="display-6 text-center mb-2 mb-lg-0">Coding Deb</h3>
+        <h3 className="display-6 text-center mb-2 mb-lg-0 fw-bolder">Coding Deb</h3>
 
         <button
           className="navbar-toggler"
