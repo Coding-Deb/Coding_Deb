@@ -5,7 +5,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top"
+      className="navbar navbar-expand-lg navbar-light"
       style={{ backgroundColor: "#2B1C78" }}
     >
       <div className="container">
@@ -14,6 +14,7 @@ export const Navbar = () => {
             src={require("../Images/Coding_Deb.jpg")}
             height={50}
             alt="Logo"
+            className="rounded-pill"
           />
         </Link>
         <h3
@@ -73,7 +74,7 @@ export const Navbar = () => {
             </li>
           </ul>
 
-          <div className="ml-auto">
+          <div className="d-flex">
             <button type="button" className="btn btn-outline-primary me-2">
               <NavLink
                 to="/SignIn"
