@@ -1,9 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#007bff" }}>
       <div className="container">
         <Link to="/home" className="navbar-brand">
           <img
@@ -12,7 +13,9 @@ export const Navbar = () => {
             alt="Logo"
           />
         </Link>
-        <h3 className="display-6 text-center mb-2 mb-lg-0 fw-bolder">Coding Deb</h3>
+        <h3 className="display-6 text-center mb-2 mb-lg-0 fw-bolder" style={{ color: "white" }}>
+          Coding Deb
+        </h3>
 
         <button
           className="navbar-toggler"
@@ -33,6 +36,7 @@ export const Navbar = () => {
                 className="nav-link"
                 to="/home"
                 activeClassName="active-link"
+                style={{ color: "white" }}
               >
                 <h5>
                   Home
@@ -44,6 +48,7 @@ export const Navbar = () => {
                 className="nav-link"
                 to="/courses"
                 activeClassName="active-link"
+                style={{ color: "white" }}
               >
                 <h5>
                   Courses
@@ -55,6 +60,7 @@ export const Navbar = () => {
                 className="nav-link"
                 to="/about"
                 activeClassName="active-link"
+                style={{ color: "white" }}
               >
                 <h5>
                   About
@@ -65,7 +71,7 @@ export const Navbar = () => {
 
           <div className="d-flex">
             <button type="button" className="btn btn-outline-primary me-2">
-              <NavLink to="/SignIn">Account</NavLink>
+              <NavLink to="/SignIn" style={{ textDecoration: 'none', color: 'black', fontWeight: 'bolder' }}>Account</NavLink>
             </button>
           </div>
         </div>

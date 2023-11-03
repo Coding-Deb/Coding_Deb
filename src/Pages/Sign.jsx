@@ -45,14 +45,14 @@ export const Sign = () => {
             <Nav variant="pills" className="mb-3">
             <Nav.Item>
               <Nav.Link eventKey="sign-in">
-                <Link to="/SignIn" className="nav-link-custom">
+                <Link to="/SignIn" className="nav-link-custom" style={{textDecoration:'none',color:'white',fontWeight:'bolder'}}>
                   Sign In
                 </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="sign-up">
-                <Link to="/SignUp" className="nav-link-custom">
+                <Link to="/SignUp" className="nav-link-custom" style={{textDecoration:'none',color:'white',fontWeight:'bolder'}}>
                   Sign Up
                 </Link>
               </Nav.Link>
