@@ -26,7 +26,7 @@ export const CourseDetails = () => {
       <div className="card mb-4" style={cardStyle}>
         <div className="card-body">
           <h3 className="card-title">{location.state.name}</h3>
-          <h6 className="card-title">Created In {location.state.name}</h6>
+          <h6 className="card-title">Created In {location.state.year}</h6>
           <p className="card-text">{location.state.description}</p>
         </div>
       </div>
