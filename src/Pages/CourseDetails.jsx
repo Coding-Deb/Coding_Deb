@@ -25,7 +25,8 @@ export const CourseDetails = () => {
     <div style={containerStyle}>
       <div className="card mb-4" style={cardStyle}>
         <div className="card-body">
-          <h4 className="card-title">{location.state.name}</h4>
+          <h3 className="card-title">{location.state.name}</h3>
+          <h6 className="card-title">{location.state.name}</h6>
           <p className="card-text">{location.state.description}</p>
         </div>
       </div>

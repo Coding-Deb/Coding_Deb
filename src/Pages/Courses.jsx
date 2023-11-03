@@ -44,6 +44,7 @@ export const Courses = () => {
                       state: {
                         name: item.name,
                         description: item.description,
+                        year: item.year_created,
                       },
                     })
                   }
