@@ -19,6 +19,8 @@ function App() {
     flexDirection: "column",
     justifyContent: "center",
     // alignItems: "center",
+    padding:"25px",
+    marginTop:"40px"
   };
 
   return (

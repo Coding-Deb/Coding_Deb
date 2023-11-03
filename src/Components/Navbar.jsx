@@ -5,7 +5,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light"
+      className="navbar navbar-expand-lg navbar-light fixed-top"
       style={{ backgroundColor: "#2B1C78" }}
     >
       <div className="container">
