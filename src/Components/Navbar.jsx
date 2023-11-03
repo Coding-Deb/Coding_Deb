@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#007bff" }}>
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#2B1C78" }}>
       <div className="container">
         <Link to="/home" className="navbar-brand">
           <img
@@ -25,8 +25,9 @@ export const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{backgroundColor:'white'}}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" ></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -71,7 +72,7 @@ export const Navbar = () => {
 
           <div className="d-flex">
             <button type="button" className="btn btn-outline-primary me-2">
-              <NavLink to="/SignIn" style={{ textDecoration: 'none', color: 'black', fontWeight: 'bolder' }}>Account</NavLink>
+              <NavLink to="/SignIn" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bolder' }}>Account</NavLink>
             </button>
           </div>
         </div>
