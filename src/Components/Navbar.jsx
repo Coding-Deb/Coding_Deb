@@ -4,7 +4,10 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#2B1C78" }}>
+    <nav
+      className="navbar navbar-expand-lg navbar-light"
+      style={{ backgroundColor: "#2B1C78" }}
+    >
       <div className="container">
         <Link to="/home" className="navbar-brand">
           <img
@@ -13,7 +16,10 @@ export const Navbar = () => {
             alt="Logo"
           />
         </Link>
-        <h3 className="display-6 text-center mb-2 mb-lg-0 fw-bolder" style={{ color: "white" }}>
+        <h3
+          className="display-6 text-center mb-2 mb-lg-0 fw-bolder"
+          style={{ color: "white" }}
+        >
           Coding Deb
         </h3>
 
@@ -25,9 +31,12 @@ export const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{backgroundColor:'white'}}
+          style={{ backgroundColor: "white", borderColor: "blue" }}
         >
-          <span className="navbar-toggler-icon" ></span>
+          <span
+            className="navbar-toggler-icon"
+            style={{ color: "white" }}
+          ></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,9 +48,7 @@ export const Navbar = () => {
                 activeClassName="active-link"
                 style={{ color: "white" }}
               >
-                <h5>
-                  Home
-                </h5>
+                <h5>Home</h5>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -51,9 +58,7 @@ export const Navbar = () => {
                 activeClassName="active-link"
                 style={{ color: "white" }}
               >
-                <h5>
-                  Courses
-                </h5>
+                <h5>Courses</h5>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -63,16 +68,23 @@ export const Navbar = () => {
                 activeClassName="active-link"
                 style={{ color: "white" }}
               >
-                <h5>
-                  About
-                </h5>
+                <h5>About</h5>
               </NavLink>
             </li>
           </ul>
 
-          <div className="d-flex">
+          <div className="ml-auto">
             <button type="button" className="btn btn-outline-primary me-2">
-              <NavLink to="/SignIn" style={{ textDecoration: 'none', color: 'white', fontWeight: 'bolder' }}>Account</NavLink>
+              <NavLink
+                to="/SignIn"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontWeight: "bolder",
+                }}
+              >
+                Account
+              </NavLink>
             </button>
           </div>
         </div>
