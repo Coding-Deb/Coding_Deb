@@ -1,12 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
 import { FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa"; // Import the icons you want to use
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
     <div>
-      <Navbar bg="primary" variant="dark">
-        <Navbar.Brand>About Us</Navbar.Brand>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand className="m-4">
+          <h4>
+            About Us
+          </h4>
+          </Navbar.Brand>
       </Navbar>
 
       <Container className="my-5">
@@ -40,34 +45,34 @@ export const About = () => {
               <h3>Quick Links</h3>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/home" className="text-white">
+                  <Link to="/home" className="text-white">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/courses" className="text-white">
+                  <Link to="/courses" className="text-white">
                     Courses
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/blog" className="text-white">
+                  <Link to="/blog" className="text-white">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </Col>
             <Col md={4}>
               <h3>Follow Us</h3>
               <div>
-                <a href="#" className="text-white me-2">
+                <Link to="#" className="text-white me-2">
                   Facebook
-                </a>
-                <a href="#" className="text-white me-2">
+                </Link>
+                <Link to="#" className="text-white me-2">
                   Twitter
-                </a>
-                <a href="#" className="text-white me-2">
+                </Link>
+                <Link to="#" className="text-white me-2">
                   Instagram
-                </a>
+                </Link>
               </div>
             </Col>
           </Row>
