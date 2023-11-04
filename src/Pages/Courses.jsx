@@ -24,7 +24,7 @@ export const Courses = () => {
   };
 
   return (
-    <div className="container mt-4" style={containerStyle}>
+    <div className="container" style={containerStyle}>
       {prog_lang.map((item, index) => {
         return (
           <div className="card mb-4" style={cardStyle} key={index}>
