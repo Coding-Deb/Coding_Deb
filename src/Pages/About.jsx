@@ -4,8 +4,17 @@ import { FaPhone, FaEnvelope, FaMapMarker } from "react-icons/fa"; // Import the
 import { Link } from "react-router-dom";
 
 export const About = () => {
+  const containerStyle = {
+    background: "linear-gradient(45deg, #3494E6, #EC6EAD)",
+    minHeight: "100vh",
+    // display: "flex",
+    
+    // alignItems: "center",
+    // padding:"25px",
+    // marginTop:"40px"
+  };
   return (
-    <div>
+    <div style={containerStyle}>
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand className="m-4">
           <h4>

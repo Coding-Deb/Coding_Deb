@@ -3,7 +3,9 @@ import { useLocation } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import "../common.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
+// import { Container, Row, Col } from 'react-bootstrap';
+import { Col, ListGroup ,Container, Row} from "react-bootstrap";
 
 export const CourseDetails = () => {
   const location = useLocation();
@@ -20,61 +22,24 @@ export const CourseDetails = () => {
 
   const containerStyle = {
     background: "linear-gradient(45deg, #3494E6, #EC6EAD)",
-    padding: "15px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const cardStyle = {
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
-    borderRadius: "10px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    padding: "20px",
+    minHeight: "100vh",
+    // display: "flex",
+    
+    // alignItems: "center",
+    // padding:"25px",
+    // marginTop:"40px"
   };
 
   return (
-    <div style={containerStyle}>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-3">
-            <div className="list-group scrollable-list">
-              <a
-                href="/Coursesdetails"
-                className="list-group-item list-group-item-action active"
-              >
-                An active item
-              </a>
-              <a
-                href="/Coursesdetails"
-                className="list-group-item list-group-item-action"
-              >
-                A second item
-              </a>
-              {/* Add more items as needed */}
-            </div>
-          </div>
-
-          <div className="col-md-8">
-            <div className="card mb-5" style={cardStyle}>
-              <div className="card-body">
-                <h3 className="card-title">{location.state.name}</h3>
-                <h6 className="card-subtitle mb-2 text-muted">
-                  Created In {location.state.year}
-                </h6>
-                <p className="card-text">{location.state.description}</p>
-                <SyntaxHighlighter language="javascript" style={dark}>
-                  {code}
-                </SyntaxHighlighter>
-              </div>
-            </div>
-            {/* <SyntaxHighlighter language="javascript" style={dark}>
-              {code}
-            </SyntaxHighlighter> */}
-          </div>
-        </div>
-      </div>
-    </div>
+    <Container fluid style={containerStyle}>
+    <Row>
+      <Col style={{ backgroundColor: '#445785' , height:"100%" , position:"absolute"}} xs={2}>
+        <h2>first</h2>
+      </Col>
+      <Col style={{ backgroundColor: '#445ab5' }}>
+        <h2>first</h2>
+      </Col>
+    </Row>
+  </Container>
   );
 };

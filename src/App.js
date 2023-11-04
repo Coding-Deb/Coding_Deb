@@ -7,6 +7,7 @@ import { Courses } from './Pages/Courses';
 import { About } from './Pages/About';
 import { CourseDetails } from './Pages/CourseDetails';
 import { Sign } from './Pages/Sign';
+import { ScrollButton } from './Components/ScrollButton';
 // import { SignIn } from './Pages/SignIn';
 // import { SignUp } from './Pages/SignUp';
 
@@ -16,8 +17,7 @@ function App() {
     background: "linear-gradient(45deg, #3494E6, #EC6EAD)",
     minHeight: "100vh",
     // display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
+    
     // alignItems: "center",
     // padding:"25px",
     // marginTop:"40px"
@@ -35,6 +35,7 @@ function App() {
         <Route exact path='/SignUp' element={<Sign/>}/>
         <Route exact path='/Coursesdetails' element={<CourseDetails/>}/>
       </Routes>
+      <ScrollButton/>
       </div>
     </Router>
   );
