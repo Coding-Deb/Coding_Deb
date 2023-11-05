@@ -33,7 +33,7 @@ function App() {
         <Route exact path='/Courses' element={<Courses/>}/>
         <Route exact path='/SignIn' element={<Sign/>}/>
         <Route exact path='/SignUp' element={<Sign/>}/>
-        <Route exact path='/Coursesdetails' element={<CourseDetails/>}/>
+        <Route exact path='/Coursesdetails/:name' element={<CourseDetails/>}/>
       </Routes>
       <ScrollButton/>
       </div>

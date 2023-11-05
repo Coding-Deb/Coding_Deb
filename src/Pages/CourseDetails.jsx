@@ -1,11 +1,13 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import "../common.css";
+import { Col } from 'react-bootstrap'
+import '../common.css'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 // import { Container, Row, Col } from 'react-bootstrap';
-import { Col, ListGroup ,Container, Row} from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 
 export const CourseDetails = () => {
   const location = useLocation();
@@ -33,11 +35,16 @@ export const CourseDetails = () => {
   return (
     <Container fluid style={containerStyle}>
     <Row>
-      <Col style={{ backgroundColor: '#445785' , height:"100%" , position:"absolute"}} xs={2}>
-        <h2>first</h2>
-      </Col>
-      <Col style={{ backgroundColor: '#445ab5' }}>
-        <h2>first</h2>
+    <Col style={{ backgroundColor: '#F5F5DC' , padding:"5px"}}>
+        <h2>{location.state.name}</h2>
+       {
+       location.state.exm_code != null ?
+       <SyntaxHighlighter language='c' style={darcula}>
+            {location.state.exm_code}
+        </SyntaxHighlighter>
+      :
+      null  
+      }
       </Col>
     </Row>
   </Container>

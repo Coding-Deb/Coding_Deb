@@ -1,9 +1,11 @@
 import React from "react";
 import cardapi from "../api/cardapi";
 import "../common.css"; // Import a CSS file for styling
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 export const Cards = () => {
+  const navigate = useNavigate();
   return (
     <div className="cards-container">
       {cardapi.map((item, index) => {
@@ -19,15 +21,22 @@ export const Cards = () => {
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text">{item.desc}</p>
-                  <div className="mb-2 bg-success justify-content-center align-content-center p-1 rounded-pill">
-                    <Button variant="outline-success" size="sm" className="justify-content-center align-content-center">
+                  <h5 className="card-title">{item.name}</h5>
+                  <p className="card-text">{item.description}</p>
+                  <Button className="mb-2 px-5 bg-success justify-content-center align-content-center p-1 rounded-pill" onClick={()=>{
+                      navigate(`/Coursesdetails/${item.name}`, {
+                        state: {
+                          name: item.name,
+                          description: item.description,
+                        },
+                      })
+                    }}>
+                   
                       <h5 className="fw-bolder" style={{color:'white'}}>
                         Details
                       </h5>
-                    </Button>
-                  </div>
+                    {/* </Button> */}
+                  </Button>
                 </div>
               </div>
             </div>

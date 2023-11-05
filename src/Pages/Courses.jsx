@@ -42,7 +42,7 @@ export const Courses = () => {
                   <h4 className="card-title">{item.name}</h4>
                   <p className="card-text">{item.description}</p>
                   <p className="card-text">Year Created: {item.year_created}</p>
-                  <p className="card-text">Example Code: {item.example_code}</p>
+                  {/* <p className="card-text">Example Code: {item.example_code}</p> */}
                   <p className="card-text">Paradigm: {item.paradigm}</p>
                   <div className="d-flex justify-content-center align-content-center">
                     <Button
@@ -50,11 +50,12 @@ export const Courses = () => {
                       className="btn btn-outline-primary me-2"
                       style={{ backgroundColor: "#2B1C78", color: "white" }}
                       onClick={() =>
-                        navigate("/Coursesdetails", {
+                        navigate(`/Coursesdetails/${item.name}`, {
                           state: {
                             name: item.name,
                             description: item.description,
                             year: item.year_created,
+                            exm_code: item.example_code,
                           },
                         })
                       }

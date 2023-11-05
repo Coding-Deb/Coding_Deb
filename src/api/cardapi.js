@@ -1,23 +1,23 @@
 const cardapi =[
     {
         'img_url' : '',
-        'title':'Web Developement',
-        'desc':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
+        'name':'Web Developement',
+        'description':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
     },
     {
         'img_url' : '',
-        'title':'Android App Developement',
-        'desc':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
+        'name':'Android App Developement',
+        'description':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
     },
     {
         'img_url' : '',
-        'title':'Data Science',
-        'desc':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
+        'name':'Data Science',
+        'description':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
     },
      {
         'img_url' : '',
-        'title':'Ethical Hacking',
-        'desc':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
+        'name':'Ethical Hacking',
+        'description':'Web development often involves collaboration between front-end and back-end developers, as well as designers and other specialists. The choice of technologies and tools may vary depending on the specific project requirements, but a combination of HTML, CSS, JavaScript, and server-side technologies is at the core of most web development endeavors.'
     },
     
 ]
