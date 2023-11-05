@@ -27,6 +27,7 @@ export const CourseDetails = () => {
   const containerStyle = {
     background: "linear-gradient(45deg, #3494E6, #EC6EAD)",
     minHeight: "100vh",
+    minWeight:"100vh"
     // display: "flex",
     
     // alignItems: "center",
@@ -36,19 +37,7 @@ export const CourseDetails = () => {
 
   return (
     <Container fluid style={containerStyle}>
-    <Row>
-    <Col style={{ backgroundColor: '#F5F5DC' , padding:"5px"}}>
-        <h2>{location.state.name}</h2>
-       {
-       location.state.exm_code != null ?
-       <SyntaxHighlighter language='c' style={darcula}>
-            {location.state.exm_code}
-        </SyntaxHighlighter>
-      :
-      null  
-      }
-      </Col>
-      {
+    {
         location.state.name == "C" ?
         <C_Lang/>
         :
@@ -57,7 +46,6 @@ export const CourseDetails = () => {
         :
         <h2>Others</h2>
       }
-    </Row>
   </Container>
   );
 };
