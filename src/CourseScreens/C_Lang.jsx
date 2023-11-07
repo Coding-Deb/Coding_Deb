@@ -123,7 +123,7 @@ export const C_Lang = () => {
               style={darcula}
               customStyle={{ fontSize: "16px" }}
             >
-              {`int main() {\n  int a = 4 ; // initialysed value to a \n if(a>2){ // condition true when value of a is greater than 2 \n print('a is greater'); // if condition true then print it\n } \n else if(a=2) { // if condition satisfied then this will call/fired \n print('a is similar to it'); // if condition true for this cond. then print it \n} \n else{ // if condition not satisfied then this will call/fired \n print('a is smaller'); // if condition false then print it \n}    return 0;\n}`}
+              {`int main() {\n  int a = 4 ; // initialysed value to a \n if(a>2){ // condition true when value of a is greater than 2 \n print('a is greater'); // if condition true then print it\n } \n else if(a=2) { // if condition satisfied then this will call/fired \n print('a is similar to it'); // if condition true for this cond. then print it \n} \n else{ // if condition not satisfied then this will call/fired \n print('a is smaller'); // if condition false then print it \n}  \n  return 0;\n}`}
             </SyntaxHighlighter>
           </Container>
         </Col>
