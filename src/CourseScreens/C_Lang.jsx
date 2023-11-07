@@ -143,21 +143,21 @@ export const C_Lang = () => {
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>7.</strong> Unary Operators:
+              <strong>7.</strong> (a) Unary Operators:
             </h4>
             <SyntaxHighlighter
               language="c"
               style={darcula}
               customStyle={{ fontSize: "16px" }}
             >
-              {`int main() {\n  int a = 4 ; // initialysed value to a \n if(a>2){ // condition true when value of a is greater than 2 \n print('a is greater'); // if condition true then print it\n } \n else{ // if condition not satisfied then this will call/fired \n print('a is smaller'); // if condition false then print it \n} \n    return 0;\n}`}
+              {`int main() {\n  int a = 4 ; // initialysed value to a \n print(++a); // The value will Be 4+1 = 5\n return 0;\n}`}
             </SyntaxHighlighter>
           </Container>
         </Col>
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>8.</strong> Nested If-Else Statement
+              <strong>7.</strong> (b) Bitwise Operators
             </h4>
             <SyntaxHighlighter
               language="c"
