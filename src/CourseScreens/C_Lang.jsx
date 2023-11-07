@@ -4,7 +4,6 @@ import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Col, Container, Row } from "react-bootstrap";
 
 export const C_Lang = () => {
-  const code = 'int main() {\n    printf("Hello, World!");\n    return 0;\n}';
   return (
     <Col style={{ backgroundColor: "#F5F5DC" }}>
       <h2 className="text-center">C Programming</h2>
@@ -39,7 +38,7 @@ export const C_Lang = () => {
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>1.</strong> Print Hello World In C Language
+              <strong>1.</strong> Print Hello World 
             </h4>
             <SyntaxHighlighter
               language="c"
@@ -53,7 +52,7 @@ export const C_Lang = () => {
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>2.</strong> Basic Variable in C Language
+              <strong>2.</strong> Basic Variable 
             </h4>
             <SyntaxHighlighter
               language="c"
@@ -71,7 +70,7 @@ export const C_Lang = () => {
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>3.</strong>Take User Input And Print It In C Language
+              <strong>3.</strong>Take User Input And Print It 
             </h4>
             <SyntaxHighlighter
               language="c"
@@ -85,7 +84,7 @@ export const C_Lang = () => {
         <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
           <Container fluid>
             <h4 className="text-center">
-              <strong>4.</strong> Basic Arithmetic Function in C Language
+              <strong>4.</strong> Basic Arithmetic Function 
             </h4>
             <SyntaxHighlighter
               language="c"
@@ -93,8 +92,38 @@ export const C_Lang = () => {
               customStyle={{ fontSize: "16px" }}
             >
               {
-                "int main() {\n   int a = 5; \n int b = 4 ; // Here a and are declared as 5 , 4  \n print( a + b ); // 5+4 = 9 \n print( a - b ); // 5-4 = 1 \n print( a * b ); // 5*4 = 20 \n print( a / b ); // 5-4 = 1 \n return 0;\n}"
+                "int main() {\n   int a = 5; \n int b = 4 ; // Here a and b are declared as 5 , 4  \n print( a + b ); // 5+4 = 9 \n print( a - b ); // 5-4 = 1 \n print( a * b ); // 5*4 = 20 \n print( a / b ); // 5/4 = 1 \n return 0;\n}"
               }
+            </SyntaxHighlighter>
+          </Container>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
+          <Container fluid>
+            <h4 className="text-center">
+              <strong>5.</strong> If-Else Statement 
+            </h4>
+            <SyntaxHighlighter
+              language="c"
+              style={darcula}
+              customStyle={{ fontSize: "16px" }}
+            >
+              {`int main() {\n  int a = 4 ; // initialysed value to a \n if(a>2){ // condition true when value of a is greater than 2 \n print('a is greater'); // if condition true then print it\n } \n else{ // if condition not satisfied then this will call/fired \n print('a is smaller'); // if condition false then print it \n} \n    return 0;\n}`}
+            </SyntaxHighlighter>
+          </Container>
+        </Col>
+        <Col md={6} style={{ backgroundColor: "#F5F5DC", padding: "15px" }}>
+          <Container fluid>
+            <h4 className="text-center">
+              <strong>4.</strong> Nested If-Else Statement 
+            </h4>
+            <SyntaxHighlighter
+              language="c"
+              style={darcula}
+              customStyle={{ fontSize: "16px" }}
+            >
+              {`int main() {\n  int a = 4 ; // initialysed value to a \n if(a>2){ // condition true when value of a is greater than 2 \n print('a is greater'); // if condition true then print it\n } \n else if(a=2) { // if condition satisfied then this will call/fired \n print('a is similar to it'); // if condition true for this cond. then print it \n} \n else{ // if condition not satisfied then this will call/fired \n print('a is smaller'); // if condition false then print it \n}    return 0;\n}`}
             </SyntaxHighlighter>
           </Container>
         </Col>
