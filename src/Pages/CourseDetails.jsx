@@ -10,6 +10,7 @@ import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Container, Row} from "react-bootstrap";
 import { C_Lang } from "../CourseScreens/C_Lang";
 import { C_Plus_Lang } from "../CourseScreens/C_Plus_Lang";
+import { Python_Lang } from "../CourseScreens/Python_Lang";
 
 export const CourseDetails = () => {
   const location = useLocation();
@@ -44,6 +45,10 @@ export const CourseDetails = () => {
         location.state.name == "C++" ?
         <C_Plus_Lang/>
         :
+        location.state.name == "Python" ?
+        <Python_Lang/>
+        :
+        
         <h2>Others</h2>
       }
   </Container>
